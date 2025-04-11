@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ccynthiia48bot Arena</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="welcome-screen" data-aos="zoom-in">
+    <h1>Welcome To @ccynthiia48bot Arena</h1>
+    <input type="text" id="name" placeholder="Masukkan nama kamu..." />
+    <button onclick="startQuiz()">GAZZ FIGHTING</button>
+
+    <div id="leaderboard-welcome" style="margin-top: 40px;"></div>
+  </div>
+
+  <div id="quiz-container" class="hidden">
+    <div id="score-container">Score: <span id="score">0</span></div>
+    <div id="quiz"></div>
+
+    <div class="submit-container">
+      <button onclick="submitScore()">Kumpulin Woii</button>
+    </div>
+
+    <div id="leaderboard"></div>
+  </div>
+
+  <audio id="bgm" src="https://j.top4top.io/m_33880y1xy1.m4a" autoplay loop hidden></audio>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
